@@ -1,0 +1,95 @@
+/* [Requirement] Section 1: Layout Fix */
+/* Add this to prevent boxes from resizing when adding padding or borders [cite: 19, 20] */
+* {
+    box-sizing: border-box; [cite: 23]
+}
+
+/* 1. Disney+ Movie Theater Background */
+body {
+    background: radial-gradient(circle at top, #30323e 0%, #1a1d29 100%);
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    color: #f9f9f9;
+}
+
+/* 2. The Cinematic Card */
+.card {
+    background-color: #1a1d29;
+    width: 320px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease-in-out;
+    
+    /* [Requirement] Visualize Border: Use a solid boundary line [cite: 33] */
+    border: 2px solid #333; [cite: 33]
+    
+    /* [Requirement] Internal Breathing Space: Set padding to exactly 20px [cite: 33] */
+    padding: 20px; [cite: 33]
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: scale(1.05);
+    border-color: rgba(249, 249, 249, 0.7);
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9);
+}
+
+/* 3. The Name and Bio Spacing */
+/* [Requirement] Social Distancing: Add margin-bottom to h1 and p tags [cite: 35, 36] */
+#profile-name, p {
+    margin-bottom: 20px; [cite: 36]
+}
+
+#profile-name {
+    color: #f9f9f9;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* 4. Contact Details */
+.card-info {
+    font-size: 14px;
+    color: #a1a1a1;
+}
+
+.status {
+    color: #f9f9f9;
+    font-weight: 600;
+}
+
+/* 5. The Bio */
+.bio {
+    color: #c0c0c0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* 6. Disney+ Styled Button */
+.action-button {
+    background-color: #f9f9f9;
+    color: #1a1d29;
+    border: none;
+    padding: 12px 30px;
+    font-weight: 800;
+    font-size: 13px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    
+    /* [Requirement] Social Distancing: Separate buttons [cite: 35, 37] */
+    margin-right: 15px; [cite: 37]
+}
+
+.action-button:hover {
+    background-color: #0072d2;
+    color: #ffffff;
+}
